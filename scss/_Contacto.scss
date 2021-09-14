@@ -1,0 +1,90 @@
+/**Contacto**/
+
+.ye{
+    background-image: url(../imag/yeye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   
+}
+
+.Contacto{
+    background-color: $formulariocontacto;
+    width: 300px;
+    height: 375px;
+    display: flex;
+    flex-direction:column;
+    
+   &__titulo{
+     color: lightcoral;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     font-weight:bold;
+     margin-top: 20px;
+     font-family: 'Comfortaa', cursive;
+     } &__Nombre{
+         color:red;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 25px;
+         background-color: lawngreen;
+         margin-top: 20px;
+     } &__Email {
+         color: blue;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 25px;
+         background-color: green;
+       } &__Whastapp{
+           color:darkgreen;
+           background-color:darksalmon;
+           font-size: 25px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        } &__Consulta{
+            color: darkslateblue;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+     
+
+}
+
+.carrousell{
+    &__miranos{
+        display: inline-block;
+        color: white;
+        background-color: yellowgreen;
+        font-size: 24px;
+        margin-left: 400px;
+        &--imge a{
+            font-size: 18px;
+            color: orange;
+        }
+            &--imge{
+               margin-left: 10px;
+        
+            }
+        
+        
+    }
+}
+
+.send{
+    background-color: orange;
+}
+

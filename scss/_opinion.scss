@@ -1,0 +1,95 @@
+/***Deja tu Opinión**/
+
+/*Operaciones en Dejanos tu Opinión*/
+#Contactoxs{
+    margin-top: 150px;
+    margin-left: 430px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-color: wheat;
+    width: $withtextarea + 50px;
+    
+
+}
+
+
+
+.contanostu{
+    &__titulo{
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:cornflowerblue;
+        font-family: 'Hina Mincho', serif;
+    } &__titulo--subtitulo{
+        color: crimson;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+}
+ 
+.ee {
+    margin-left: 403px;
+}
+
+.vovelver{
+    &__volver{
+        display: inline-block;
+        background-color: orchid;
+        color: palegreen;
+        margin-left: 320px;
+        &--indexxx a{
+            background-color: palevioletred;
+            color:purple;
+            font-size: 22px;
+            }
+    }
+}
+/*Condicionales if en dejanos tu Opinión*/
+ .vovelver__volver{
+    @if ($coloropinión==red){
+        color: black;
+        background-color: orange;
+         font-size: 30px;
+    }@else if ($coloropinión==blue){
+               color: lightblue;
+               background-color: lightcoral;
+         } @else {
+             color: lightgray;
+             background-color: lightskyblue;
+         }
+    
+}
+/*bucle en dejanos tu Opinión*/
+@for $i from 1 through 3 {
+    h#{$i} {
+        font-size: $i * 20px
+    }
+    
+}
+
+/*each lista en dejanos tu Opinión*/
+@each $obse in red, pink,orange, orangered {
+    .contanostu__titulo#{$obse} {
+        background-color:$obse;
+        color: black;
+        font-size: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Hina Mincho', serif;
+    }
+
+    
+}
+
+
+.op{
+    background-image: url(../imag/opinion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

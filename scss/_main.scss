@@ -1,0 +1,26 @@
+/**Main de Index**/
+
+.cuadroinfo{
+    background-color: $bgmain;
+    &__presenta{
+        font-family: 'Permanent Marker', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+        font-size: 160px;
+    }
+}
+
+h2{
+    background-color: $bgsubt;
+    letter-spacing: 15px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 53px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

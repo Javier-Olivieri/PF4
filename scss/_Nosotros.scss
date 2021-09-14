@@ -1,0 +1,92 @@
+/**Nosotros**/
+
+.yehaas{
+    background-image: url(../imag/nana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cards{
+    margin: 0 auto;
+    background-color: burlywood;
+    &-title{
+        font-size: 48px;
+        color: coral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: 'Maitree', serif;
+    } 
+        &-text{
+            display: flex;
+            color: black;
+            font-weight: bold;
+            justify-content: space-evenly;
+            font-family: 'Abel', sans-serif;
+            
+      } 
+       
+ }
+    
+ .btn-primarys {
+    background-color: green;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.btn-objetivos{
+   background-color:$bgmodalobjetivos;
+   color: indigo;
+   font-weight: bold;
+   margin-left: 549px;
+   font-size: 3rem;
+}
+
+.modal{
+    &-title{
+      margin-left: 180px;
+      text-decoration:underline;
+    }
+      &-header{
+          background-color: lightblue;
+      }
+
+      &-footer{
+          background-color: lightblue;
+      }
+    
+}
+
+/*MAPS en Nosotros*/
+
+$naus:(
+    A:red,
+    B: orange,
+);
+
+@each $letra, $colorfondo in $naus {
+     .pie#{$letra} {
+        background-color: $colorfondo;
+    }
+    
+}
+
+.alert{
+    background-color: $background;
+   &-warning{
+        color: $color;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Abel', sans-serif;
+     
+    }
+}

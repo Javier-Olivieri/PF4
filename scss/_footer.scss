@@ -1,0 +1,41 @@
+/**Footer**/
+.pie{
+    background-color: $bgfooter;
+}
+
+.pie{
+    &__gracias{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Pacifico', cursive;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        &--recom{
+            color: $colorTitulo;
+            display:inline-block;
+            margin-left: 610px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+       
+    }
+}
+
+
+/*Extend en footer*/
+.pie__gracias{
+    border: 2px double orange;
+    
+}
+
+.pie__gracias--recom{
+    @extend .pie__gracias;
+    background-color: lightskyblue;
+}
+
+
+
+
+

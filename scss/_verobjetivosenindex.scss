@@ -1,0 +1,17 @@
+/***boton ver ObjetiVOS index**/
+
+.quieresa{
+    &__titulo{
+        display: inline-block;
+        background-color: grey;
+        margin-top: 60px;
+        margin-left: 350px;
+        color:white;
+        font-family: 'Sacramento', cursive;
+        font-size: 35px;
+       &--boton a{
+           background-color: orange;
+           color: black;
+       }
+    }
+}
